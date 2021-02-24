@@ -5,8 +5,6 @@ to run:
 
 from the directory where you downloaded these two scripts, run this command:
 
-bash fixer.bash [path to genes.tsv in cellranger outs] [path to reference gtf] [output tsv path]
+bash fixer.bash [path to genes.tsv in cellranger outs] [path to reference gtf] 
 
-The script will rename the second column of the genes.tsv according to the short names in the reference gtf.  This works with flybase gtfs, please manually verify with gtfs from other sources.
-
-Before the tool runs it copies genes.tsv into a file called genesbackup.tsv in the current directory.  If something goes wrong, just restore genes.tsv from that file.
+The script will rename the second column of the features.tsv and output features2.tsv
